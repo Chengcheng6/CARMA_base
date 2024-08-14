@@ -503,7 +503,8 @@ subroutine setupckern(carma, cstate, rc)
 
                 ! Now combine all the coagulation and collection kernels into the
                 ! overall kernel.
-                ckernel(k,i1,i2,j1,j2) = cbr + ccd + cgr
+                !ckernel(k,i1,i2,j1,j2) = cbr + ccd + cgr
+                ckernel(k,i1,i2,j1,j2) = cbr + cgr      !+++ test ccd = 0
 
                 ! To avoid generation of large, non-physical hydrometeors by
                 ! coagulation, cut down ckernel for large radii
