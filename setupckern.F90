@@ -2,6 +2,8 @@
 ! reference the CARMA structure.
 #include "carma_globaer.h"
 
+!+++ test comments
+
 !!  This routine evaluates the coagulation kernels, ckernel(k,j1,j2,i1,i2)
 !!  [cm^3 s^-1] and pkernel. Indices correspond to aritrary array of columns <ic, iy>
 !!  vertical level <k>, aerosol groups <j1,j2> and bins <i1,i2> of colliding particles.
